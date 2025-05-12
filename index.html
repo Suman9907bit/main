@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Protected Page</title>
+  <style>
+    body{margin:auto;}
+    .main{color:white;
+        text-shadow: 2px 5px 10px black;
+        
+          margin: 0px;
+          text-align: center;}
+    .name{font-size: 50px;}
+    #content {
+      display: none;
+      background-color: white;
+    
+      width: 90%;
+      border-radius: 5px;
+
+   
+     
+    }
+    .password{padding: 10px;
+      font-size: 16px;
+      margin: 0px 0;
+      text-align: center;
+      color:green;}
+    input[type="password"], button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 0px 0;
+      text-align: center;
+      color: red;
+    }
+    .pass{background-color: silver;
+      width:50%;
+      border:solid 2px red;
+      border-radius: 10px;
+      padding: 20px;
+      .log{margin-top:-20px;}
+      .succ{color:#0a806a;
+        padding: 20px;
+        margin-top:-20px;
+        text-align: justify;
+        
+
+            }
+
+     .visit{color:white;
+            background-color:blue;
+            width:60%;
+            padding:10px;
+            border-radius: 5px;
+            font-size: 30px;
+            cursor: pointer;
+            
+
+            }  
+
+    .cancel{color:white;
+            background-color:green;
+            width:20%;
+            padding:10px;
+            border-radius: 5px;
+            cursor:pointer;}
+
+          .a{text-decoration: none;}  
+         
+  </style>
+</head>
+<body bgcolor="gray"><div class="main">
+
+  <p class="name">JANA ONLINE SERVICE</p>
+
+
+
+</div><center>
+<div class="pass">
+<image src="https://icons.veryicon.com/png/o/application/awesome-common-free-open-source-icon/user-circle-3.png" height="70">
+
+  <h1>Loging</h1>
+  <p class="log">Log in to go to the main website.</p>
+  <div id="login">
+    <input type="Number" class="password" placeholder="Enter Your ID" required><br><br>
+    <input type="password" id="password" placeholder="Enter Password" required><br><br>
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+
+  <div id="content">
+   <image src="https://cdn-icons-gif.flaticon.com/17702/17702130.gif" height="130px">
+    <h1><font color="green">Sucsessfully</font></h1>
+    <p class="succ">Thank you very much for logging in to the page. Click Visit Now to go to my website.</p>
+
+    <a href="https://suman9907bit.github.io/Jana-online-service-/" class="a"><div class="visit">
+    visit now</div></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="#" class="a"><div class="cancel">
+    Cancel</div></a>
+
+    
+<br><br>
+
+  </div>
+</div></center>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      const correctPassword = "suman7204093@%%***";
+
+      if (password === correctPassword) {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("login").style.display = "none";
+      } else {
+        alert("Wrong password!");
+        document.getElementById("password").value = "";
+      }
+    }
+  </script><br><br>
+<center>
+  <div style="color:gray;
+            background-color: silver;
+            border-radius: 10px;
+            width: 50%;
+            padding: 20px;
+            border:solid 2px black;">
+
+📢 নোটিশ
+
+এটি একটি ওয়েব ওয়ার্ক ওয়েবসাইট। সাইটটিতে লগইন করতে হলে অনুমোদিত পাসওয়ার্ড থাকা আবশ্যক।
+
+⚠️ মনে রাখবেন, শুধুমাত্র নির্ধারিত ও বৈধ পাসওয়ার্ড ব্যবহার করেই সাইন ইন করা যাবে। একইসঙ্গে, চারবার ভুল পাসওয়ার্ড দেওয়ার চেষ্টা করলে অ্যাক্সেস বন্ধ হয়ে যেতে পারে।
+
+✅ নতুন পাসওয়ার্ড তৈরি বা অনুমোদনের জন্য অনুগ্রহ করে নিচের নম্বরগুলোর যেকোনো একটিতে যোগাযোগ করুন:
+📞 9907992247
+📞 6297726894<br><br>
+
+📢 Notice
+
+This is a Web Work website. A valid password is required to sign in.
+
+⚠️ Please note that access will only be granted with an authorized password. After four failed login attempts, your access may be temporarily blocked.
+
+✅ To create or request a valid password, please contact one of the following numbers:
+📞 9907992247
+📞 6297726894
+
+Thank you.
+
+  </div></center><br><br><br>
+</body>
+</html>
+
